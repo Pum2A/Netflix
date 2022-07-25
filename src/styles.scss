@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --color-red: #e50914
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -10,19 +14,20 @@ html{
 
 
 header{
-    height: 70vh;
-    background-image: url(../src/assets/images/netflix-images.jpg);
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.83),rgba(0, 0, 0, 0.287)), url(../src/assets/images/netflix-images.jpg);
     background-position:100%;
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom: 8px solid #222;
 }
+
 
 .top{
 
     display: flex;
-    height: 15vh;
+    height: 12vh;
     width: 100%;
-    // background-color: red;\
     align-items: center;
 }
 .logo{
@@ -41,26 +46,34 @@ header{
     height: 35px;
     width: 80px;
     font-family: 'Barlow Semi Condensed', sans-serif;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 0.3rem;
+    color: #fff;
+    padding-left: 5px;
 }
 .top-buttons .login{
     margin: 52px 20px;
     height: 32px;
     width: 100px;
-    background-color: red;
+    background-color: var(--color-red);
     border: none;
     color: #fff;
     border-radius: 0.3rem;
     font-family: 'Barlow Semi Condensed', sans-serif;
+    cursor: pointer;
 }
 h1, span{
     color: #fff;
 }
 h1{
-    display: flex;
-    justify-content: center;
+    margin: 0 auto;
+    max-width: 640px;
     align-items: center;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+
+    
 }
 span{
     display: flex;
@@ -70,12 +83,16 @@ span{
 
 }
 .top-text-second{
-    margin-top: 10px;
+    margin: 10px 20px;
     font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    // text-align: center;
 }
 .top-text-third{
-    margin-top: 10px;
+    margin: 10px 20px;
     font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 .email-container{
@@ -85,15 +102,17 @@ span{
     margin-top: 25px;
 }
 .start{
-    height: 40px;
-    width: 110px;
-    background-color: red;
+    height: 41px;
+    width: 120px;
+    background-color: var(--color-red);
     border: none;
     color: #fff;
-    border-radius: 0.3rem;
-    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1.1rem;
     font-weight: 100;
+    border-radius: 0.1rem;
+    border: 1px solid rgb(121, 10, 10);
+    cursor: pointer;
 }
 .start-container{
     display: flex;
@@ -102,6 +121,83 @@ span{
     margin-top: 25px;
 }
 input, .email{
-    height: 2.2rem;
+    height: 3rem;
     width: 28rem;
+    padding-left: 10px;
+    font-size: 0.9rem;
+}
+
+section{
+    height: 50vh;
+    background-color: black;
+    border-bottom: 8px solid #222;
+}
+
+.watch-on-tv{
+    border: 3px solid #fff;
+    color: #fff;
+}
+
+@media screen and (min-width: 300px) {
+    .logo{
+        height: 9vh;
+        padding: 0px 10px;
+    }
+    .top-buttons .login{
+    margin: 50px 20px;
+    height: 28px;
+    }
+    .top-buttons .languages{
+        height: 28px;
+    }
+    h1{
+        font-size: 2rem;
+        margin: 50px 20px;
+    }
+    .top-text-second{
+        font-size: 1.25rem;
+    }
+    .top-text-third{
+        font-size: 1rem;
+    }
+    input, .email{
+        width: 20rem;
+        padding-left: 10px;
+        font-size: 0.9rem;
+    }
+}
+@media screen and (min-width: 700px){
+    .logo{
+        height: 11vh;
+        padding: 0px 30px;
+    }
+    .top-buttons .login{
+        margin: 10px 12px;
+        height: 32px;
+    }
+    .top-buttons .languages{
+        margin: 10px 12px;
+        height: 32px;
+    }
+    h1{
+        margin: 40px auto;
+        font-size: 3.2rem;
+    }
+    input, .email{
+        width: 28rem;
+    }
+    .top-text-second{
+        font-size: 1.45rem;
+        margin: 20px;
+    }
+    .top-text-third{
+        font-size: 1.2rem;
+        margin: 20px;
+    }
+    .start-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+    }
 }
