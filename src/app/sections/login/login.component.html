@@ -5,7 +5,7 @@
             src="../../../assets/images/netflix-logo.png"
             alt="netflixLogo"
             class="logo"
-            routerLink="main"
+            routerLink="/main"
           />
       </div>
     </div>
@@ -27,14 +27,36 @@
 
             <div class="register">
                 <div class="account">Nie masz jeszcze konta w serwisie Netflix?</div>
-                <div class="register-text">Zarejestruj się.</div>
+                <a href="#" class="register-text" routerLink="/main">Zarejestruj się.</a>
                 <div class="captcha">Ta strona korzysta z zabezpieczenia Google reCAPTCHA, by upewnić się, że nie jesteś botem.</div>
-                <div class="more">Dowiedz się więcej.</div>
+                <a href="#" class="more">Dowiedz się więcej.</a>
+                
             </div>
         </div>
-    </div>
+    </div>    
     <footer>
+        <div class="site-footer">
+            <p class="footer-top">
+                Pytania? Zadzwoń pod numer 
+               <a href="">
+                   00 800 112 4392
+               </a>
+            </p>
         
+        <ul class="footer-links">
+            <li class="footer-link-item">Często zadawane pytania </li>
+            <li class="footer-link-item">Centrum pomocy </li>
+            <li class="footer-link-item">Warunki korzystania </li>
+            <li class="footer-link-item">Prywatność </li>
+            <li class="footer-link-item">Ustawienia plików cookie </li>
+            <li class="footer-link-item">Informacje o firmie </li>
+        </ul>
+        <div class="language-selection-container">
+            <select name="languages" id="languages" class="languages">
+                <option value="english">English</option>
+                <option class="polish-lang" value="polish" selected>Polski</option>
+              </select>
+        </div>
+    </div>
     </footer>
-
-  </header>
+</header>
