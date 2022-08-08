@@ -96,15 +96,8 @@ header{
     margin: 0 auto;
     margin-top: 50px;
 }
-.boxes-container input {
-    height: 50px;
-    width: 95%;
-    margin-top: 20px;
-    background-color: #333;
-    text-decoration: none;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
+.email-box{
+    height: 1.4rem;
 }
 .login{
     font-size: 16px;
@@ -112,7 +105,7 @@ header{
 }
 .boxes-container button{
     margin-top: 35px;
-    background-color: var(--color-red);
+    background-color: #0080ff;
     min-height: 50px;
     min-width: 98px;
     color: #fff;
@@ -131,11 +124,28 @@ header{
     margin-left: 28px;
     color: #b3b3b3;
 }
-
-.help{
-    font-size: 13px;
+.radio-text{
     position: absolute;
-    margin-top: 20px;
+    top: 23.3%;
+    left: 44.1%;
+    color: #fff;
+}
+.radio-text2{
+    position: absolute;
+    top: 27.3%;
+    left: 44.1%;
+    color: #fff;
+}
+.email-send{
+    margin-top: 25px;
+    color: #fff;
+}
+.help{
+    display: flex;
+    margin-top: 5px;
+    background-color: red;
+    height: 35px;
+    width: 20px;
 }
 
 .help-question:hover{
@@ -150,74 +160,6 @@ header{
     margin: 0 auto;
     color: #b3b3b3;
 }
-.account{
-    color: #737373;
-}
-.register-text{
+.boxes-container-content{
     color: #fff;
-    text-decoration: none;
-}
-.captcha{
-    color: #8c8c8c;
-}
-.more{
-    color: #0071eb;
-    text-decoration: none;
-}
-.more:hover{
-    text-decoration: underline;
-}
-.register-text:hover{
-    text-decoration: underline;
-}
-footer{
-    margin-top: 125px;
-    height: 18rem;
-    background-color: rgba(0,0,0,.75);
-}
-
-.site-footer{
-    max-width: 1000px;
-    margin: 0 auto;
-    color: #737373;
-}
-.footer-top{
-    padding-top: 25px;
-    letter-spacing: 2px;
-}
-.footer-links{
-    max-width: 1000px;
-    font-size: 13px;
-    box-sizing: border-box;
-    margin-top: 25px;
-}
-.footer-links li{
-    box-sizing: border-box;
-    padding: 0;
-    margin-bottom: 16px;
-    display: inline-block;
-    min-width: 100px;
-    width: 32%;
-    padding-right: 12px;
-    vertical-align: top;
-    cursor: pointer;
-}
-.footer-links li:hover{
-    text-decoration: underline;
-}
-.language-selection-container{
-    margin-top: 25px;
-}
-.languages{
-    height: 45px;
-    width: 120px;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    background: none;
-    border: 1px solid #737373;
-    border-radius: 0.01rem;
-    color: #737373;
-    padding-left: 40px;
-}
-select option{
-    background-color: #000;
 }
