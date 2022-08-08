@@ -1,0 +1,520 @@
+button{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+header{
+    height: 85vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.83),rgba(0, 0, 0, 0.287)), url(../../../assets/images/netflix-images.jpg);
+    background-position:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 8px solid #222;
+}
+
+
+.top{
+
+    display: flex;
+    height: 12vh;
+    width: 100%;
+    align-items: center;
+}
+.logo{
+    height: 11vh;
+    padding: 0px 30px;
+    cursor: pointer;
+
+}
+.top-buttons{
+    flex: 1;
+    display: flex;
+    justify-content: right;
+
+}
+.top-buttons .languages{
+    margin: 50px 0px;
+    height: 35px;
+    width: 80px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 0.01rem;
+    color: #fff;
+    padding-left: 5px;
+}
+
+select option{
+    background-color: gray;
+}
+.top-buttons .login{
+    margin: 52px 20px;
+    height: 32px;
+    width: 100px;
+    background-color: var(--color-red);
+    border: none;
+    color: #fff;
+    border-radius: 0.3rem;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    cursor: pointer;
+}
+h1, span{
+    color: #fff;
+}
+h1{
+    margin: 0 auto;
+    max-width: 640px;
+    align-items: center;
+    text-align: center;
+    font-size: 2.8rem;
+
+    
+}
+span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.top-text-second{
+    margin: 10px 20px;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    // text-align: center;
+}
+.top-text-third{
+    margin: 10px 20px;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.email-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.start{
+    height: 4rem;
+    width: 120px;
+    background-color: var(--color-red);
+    border: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 100;
+    border-radius: 0.1rem;
+    border: 1px solid rgb(121, 10, 10);
+    cursor: pointer;
+}
+.start-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+input, .email{
+    height: 2.9rem;
+    width: 28rem;
+    padding-left: 10px;
+    font-size: 0.9rem;
+}
+
+section{
+    height: 50vh;
+    background-color: black;
+    border-bottom: 8px solid #222;
+}
+
+
+.watch-on-tv{
+    border: 3px solid #fff;
+    color: #fff;
+}
+.watchontv-text{
+    font-size: 1.6rem;
+    max-width: 800px;
+    letter-spacing: 0;
+    // margin: 20px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.watchontv-text h2 {
+    font-size: 3.6rem;
+    // align-items: center;
+    // line-height: rem;
+}
+
+
+.card-container{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1100px;
+    
+}
+.card-container .watchontv-text{
+    margin-bottom: 30px;
+}
+
+.netflix-tv{
+    height: 42vh;
+    margin: 20px 0px;
+}
+
+.watchonphone-text h2{
+    font-size: 3.6rem;
+    align-items: center;
+    line-height: 3.5rem;
+}
+.watchonphone-text div{
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.watcheverywhere-text h2{
+    font-size: 3.6rem;
+    align-items: center;
+    line-height: 3.5rem;
+}
+.watcheverywhere-text div{
+    font-size: 1.9rem;
+    line-height: 2.5rem;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.kids-text h2{
+    font-size: 3rem;
+    align-items: center;
+    // line-height: 3.5rem;
+    max-width: 400px;
+    padding: 0px 50px;
+}
+.kids-text div{
+    font-size: 1.6rem;
+    // line-height: 2.5rem;
+    text-align: start;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 50px;
+}
+
+.netflix-phone{
+    height: 35vh;
+    margin: 20px 0px;
+}
+.netflix-mac{
+    height: 42vh;
+    margin: 20px 0px;
+}
+.netflix-kids{
+    height: 40vh;
+    margin: 20px 0px;
+}
+
+.kids-container{
+    margin-top: 10px;
+}
+.tv-container img{
+    margin-left: 50px;
+}
+
+
+@media screen and (min-width: 300px) {
+    section{
+        height: 80vh;
+    }
+
+    .logo{
+        height: 9vh;
+        padding: 0px 10px;
+    }
+    .top-buttons .login{
+    margin: 50px 20px;
+    height: 28px;
+    }
+    .top-buttons .languages{
+        height: 28px;
+    }
+    h1{
+        font-size: 2rem;
+        margin: 50px 20px;
+    }
+    .top-text-second{
+        font-size: 1.25rem;
+    }
+    .top-text-third{
+        font-size: 1rem;
+    }
+    input, .email{
+        width: 22rem;
+        padding-left: 10px;
+        font-size: 0.9rem;
+    }
+    input{
+        border-radius: 0.15rem;
+        text-decoration: none;
+        border: none;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    .email{
+        align-items: center;
+    }
+    .start{
+        height: 2.8rem;
+        width: 8rem;
+    }
+    .button-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+    }
+    .netflix-tv{
+        height: 25vh;
+        margin: 0 auto;
+        padding-right: 40px;
+    }
+    .netflix-phone{
+        height: 25vh;
+        margin: 0 auto;
+    }
+    .netflix-mac{
+        height: 25vh;
+        margin: 0 auto;
+    }
+    .netflix-kids{
+        height: 25vh;
+        margin: 0 auto;
+    }
+
+    .card-container{
+        max-width: 1500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 35px;
+    }
+
+    .watchontv-text h2{
+        display: flex;
+        font-size: 1.8rem;
+        align-items: center;
+        justify-content: center
+    }
+
+    .watchonphone-text h2{
+        display: flex;
+        font-size: 1.8rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .watcheverywhere-text h2{
+        display: flex;
+        font-size: 2.3rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .kids-text h2{
+        display: flex;
+        font-size: 2.3rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .kids-text{
+        display: flex;
+        font-size: 2.3rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .watchontv-text div{
+        display: flex;
+        font-size: 1.3rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .watchonphone-text div{
+        display: flex;
+        font-size: 1.3rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+    }
+    .watcheverywhere-text div{
+        display: flex;
+        font-size: 1.3rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .kids-text div{
+        display: flex;
+        font-size: 1.3rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 700px){
+    .logo{
+        height: 14vh;
+        padding: 0px 30px;
+    }
+    .top-buttons .login{
+        margin: 10px 40px;
+        height: 33px;
+    }
+    .top-buttons .languages{
+        margin: 10px 0px;
+        height: 34px;
+    }
+    h1{
+        margin: 0 auto;
+        max-width: 600px;
+        font-size: 3.7rem;
+    }
+    input, .email{
+        width: 29rem;
+        height: 3.5rem;
+    }
+    .start{
+        width: 14rem;
+        font-size: 1.6rem;
+        height: 3.90rem;
+        
+    }
+    .top-text-second{
+        font-size: 1.45rem;
+        margin: 20px;
+    }
+    .top-text-third{
+        font-size: 1.2rem;
+        margin: 20px;
+    }
+    .content-header{
+        margin-top: 100px;
+    }
+    form{
+        display: flex;
+        align-items: center;
+    }
+    .card-container{
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1100px;
+        padding-top: 25px;
+        
+    }
+
+    .watch-on-tv{
+        border: 3px solid #fff;
+        color: #fff;
+    }
+    .watchontv-text{
+        font-size: 1.6rem;
+        max-width: 800px;
+        letter-spacing: 0;
+        // margin: 20px 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .watchontv-text h2 {
+        font-size: 3.6rem;
+        // align-items: center;
+        // line-height: rem;
+    }
+    
+    
+    .card-container{
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        max-width: 1100px;
+        
+    }
+    .card-container .watchontv-text{
+        margin-bottom: 30px;
+    }
+    
+    .netflix-tv{
+        height: 42vh;
+        margin: 20px 0px;
+    }
+    
+    .watchonphone-text h2{
+        font-size: 3.6rem;
+        align-items: center;
+        line-height: 3.5rem;
+    }
+    .watchonphone-text div{
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        text-align: start;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .watcheverywhere-text h2{
+        font-size: 3.6rem;
+        align-items: center;
+        line-height: 3.5rem;
+    }
+    .watcheverywhere-text div{
+        font-size: 1.9rem;
+        line-height: 2.5rem;
+        text-align: start;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .kids-text h2{
+        font-size: 3rem;
+        align-items: center;
+        // line-height: 3.5rem;
+        max-width: 400px;
+        padding: 0px 50px;
+    }
+    .kids-text div{
+        font-size: 1.6rem;
+        // line-height: 2.5rem;
+        text-align: start;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0px 50px;
+    }
+    
+    .netflix-phone{
+        height: 35vh;
+        margin: 20px 0px;
+    }
+    .netflix-mac{
+        height: 42vh;
+        margin: 20px 0px;
+    }
+    .netflix-kids{
+        height: 40vh;
+        margin: 20px 0px;
+    }
+    
+    .kids-container{
+        margin-top: 10px;
+    }
+    .tv-container img{
+        margin-left: 50px;
+    }
+    
+
+}

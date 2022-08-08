@@ -1,0 +1,130 @@
+
+:root{
+    --color-red: #e50914
+}
+button{
+    text-decoration: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+header{
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.83),rgba(0, 0, 0, 0.287)), url(../../../assets/images/netflix-images.jpg);
+    background-position:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 8px solid #222;
+}
+
+
+.top{
+
+    display: flex;
+    height: 12vh;
+    width: 100%;
+    align-items: center;
+}
+.logo{
+    height: 11vh;
+    padding: 0px 30px;
+    cursor: pointer;
+
+}
+.top-buttons{
+    flex: 1;
+    display: flex;
+    justify-content: right;
+
+}
+.box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background-color: rgba(0,0,0,.75);
+    height: 600px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    box-sizing: border-box;
+    min-height: 515px;
+    padding: 20px 0 30px;
+}
+.box-login{
+    display: flex;
+    font-size: 2rem;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.boxes-container{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 310px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.boxes-container input {
+    height: 50px;
+    width: 95%;
+    margin-top: 20px;
+    background-color: #333;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+}
+.login{
+    font-size: 16px;
+    padding-left: 20px;
+}
+.boxes-container button{
+    margin-top: 35px;
+    background-color: var(--color-red);
+    min-height: 50px;
+    min-width: 98px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.under-button{
+    display: flex;
+    height: 150px;
+    width: 310px;
+    margin: 0 auto;
+}
+.under-button div{
+    margin-top: 16px;
+    margin-left: 28px;
+    color: #b3b3b3;
+}
+
+.help{
+    font-size: 13px;
+    position: absolute;
+    margin-top: 20px;
+}
+.register{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 310px;
+    margin: 0 auto;
+    color: #b3b3b3;
+}
+.account{
+    color: #737373;
+}
+.register-text{
+    color: #fff;
+}
+.captcha{
+    color: #8c8c8c;
+}
+.more{
+    color: #0071eb;
+}
